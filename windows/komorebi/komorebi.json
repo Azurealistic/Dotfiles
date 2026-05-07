@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/blob/v0.1.39/schema.json",
+  "cross_monitor_move_behaviour": "Insert",
+  "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME\\applications.json",
+  "transparency_alpha": 245,
+  "transparency_ignore_rules": [
+    {
+      "kind": "Title",
+      "id": "MapleStory",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP"
+        },
+        {
+          "name": "II",
+          "layout": "BSP"
+        },
+        {
+          "name": "III",
+          "layout": "BSP"
+        },
+        {
+          "name": "IV",
+          "layout": "BSP"
+        },
+        {
+          "name": "V",
+          "layout": "BSP"
+        },
+        {
+          "name": "VI",
+          "layout": "BSP"
+        },
+        {
+          "name": "VII",
+          "layout": "BSP"
+        }
+      ]
+    },
+    {
+      "workspaces": [
+        {
+          "name": "",
+          "layout": "BSP"
+        }
+      ]
+    }
+  ],
+  "ignore_rules": [
+    {
+      "kind": "Title",
+      "id": "MapleStory",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "animation": {
+    "enabled": false,
+    "fps": 240
+  },
+  "theme": {
+    "palette": "Catppuccin",
+    "name": "Mocha",
+    "single_border": "Blue",
+    "stack_border": "Green",
+    "monocle_border": "Pink",
+    "floating_border": "Yellow",
+    "unfocused_border": "Base",
+    "unfocused_locked_border": "Red",
+    "stackbar_focused_text": "Green",
+    "stackbar_unfocused_text": "Text",
+    "stackbar_background": "Base",
+    "bar_accent": "Teal"
+  },
+  "stackbar": {
+    "height": 40,
+    "mode": "OnStack",
+    "tabs": {
+      "width": 300,
+      "focused_text": "#00a542",
+      "unfocused_text": "#b3b3b3",
+      "background": "#141414"
+    }
+  }
+}

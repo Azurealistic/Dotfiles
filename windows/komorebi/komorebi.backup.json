@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/blob/v0.1.39/schema.json",
+  "cross_monitor_move_behaviour": "Insert",
+  "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME\\applications.json",
+  "default_workspace_padding": 20,
+  "default_container_padding": 20,
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP"
+        },
+        {
+          "name": "II",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "III",
+          "layout": "HorizontalStack"
+        },
+        {
+          "name": "IV",
+          "layout": "UltrawideVerticalStack"
+        },
+        {
+          "name": "V",
+          "layout": "Rows"
+        },
+        {
+          "name": "VI",
+          "layout": "Grid"
+        },
+        {
+          "name": "VII",
+          "layout": "RightMainVerticalStack"
+        }
+      ]
+    },
+    {
+      "workspaces": [
+        {
+          "name": "",
+          "layout": "BSP"
+        }
+      ]
+    }
+  ],
+  "theme": {
+    "palette": "Catppuccin",
+    "name": "Mocha",
+    "single_border": "Blue",
+    "stack_border": "Green",
+    "monocle_border": "Pink",
+    "floating_border": "Yellow",
+    "unfocused_border": "Base",
+    "unfocused_locked_border": "Red",
+    "stackbar_focused_text": "Green",
+    "stackbar_unfocused_text": "Text",
+    "stackbar_background": "Base",
+    "bar_accent": "Blue"
+  }
+}
