@@ -1,0 +1,44 @@
+$Env:KOMOREBI_CONFIG_HOME = ''
+
+$PSVersionTable.PSEdition -ne 'Core' | Out-Null
+
+oh-my-posh init pwsh --config '' | Invoke-Expression
+
+# terminal icons
+Import-Module -Name Terminal-Icons
+
+# Shows navigable menu of all options when hitting Tab
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+
+# Autocompletion for arrow keys
+Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
+Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
+
+# aliases
+Set-Alias -Name c -Value clear
+Set-Alias fd find
+Set-Alias grep rg
+Set-Alias caqt bat
+Set-Alias htop btm
+Set-Alias ls eza
+Set-Alias send ffsend
+Set-Alias mail himalaya
+Set-Alias file yazi
+Set-Alias files yazi
+Set-Alias vim nvim
+
+function y {
+	$tmp = (New-TemporaryFile).FullName
+	yazi.exe $args --cwd-file="$tmp"
+	$cwd = Get-Content -Path $tmp -Encoding UTF8
+	if ($cwd -and $cwd -ne $PWD.Path -and (Test-Path -LiteralPath $cwd -PathType Container)) {
+		Set-Location -LiteralPath (Resolve-Path -LiteralPath $cwd).Path
+	}
+	Remove-Item -Path $tmp
+}
+
+$Env:BAT_THEME = "Catppuccin Mocha"
+
+fastfetch
+
+Invoke-Expression (& { (zoxide init powershell | Out-String) })

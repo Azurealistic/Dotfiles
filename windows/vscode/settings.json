@@ -1,0 +1,49 @@
+{
+    "workbench.colorTheme": "Catppuccin Dark Pro",
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "security.workspace.trust.untrustedFiles": "open",
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "pixelbyte.love2d.path": "C:\\Program Files\\Love2D\\love.exe",
+    "explorer.confirmDragAndDrop": false,
+    "editor.lineNumbers": "relative",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSaveMode": "file",
+        "editor.formatOnType": false,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "files.trimTrailingWhitespace": true
+    },
+    "ruff.nativeServer": "on",
+    "python.createEnvironment.trigger": "off",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.venv": true,
+        "**/*.egg-info": true,
+        "**/__pycache__": true
+    },
+    "editor.inlayHints.enabled": "offUnlessPressed",
+    "claudeCode.preferredLocation": "panel",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "json.schemaDownload.trustedDomains": {
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://json-schema.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://raw.githubusercontent.com": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://schemastore.azurewebsites.net/": true,
+        "https://www.schemastore.org/": true
+    }
+}
